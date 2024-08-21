@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(90deg, rgba(0,180,219,1) 0%, rgb(2, 124, 164) 100%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background: linear-gradient(90deg, rgba(0,180,219,1) 0%, rgb(2, 124, 164) 100%);
+    padding: 1rem;
+}
+
+.box {
+    background-color: #ecebeb;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    box-shadow: 1rem 1rem;
+    width: 100%;
+    max-width: 650px;
+    text-align: center;
+    overflow: hidden; 
+}
+
+.box h1 {
+    font-weight: bolder;
+    font-family: "Segoe Script", cursive;
+}
+
+label {
+    display: block;
+    margin: 0.2rem 0;
+}
+
+input, select, button {
+    margin-top: 0.2rem;
+}
+.resultados{
+    margin-top: 1rem;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.tabela-container {
+    width: 100%;
+    overflow-x: auto; 
+    margin-top: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;
+}
+
+td, th {
+    border: 1px solid #000;
+    text-align: right;
+    padding: 8px;
+    white-space: nowrap; 
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+@media (max-width: 850px) {
+    .tabela-container {
+        overflow-x: auto; 
+    }
+}
+
+@media (max-width: 450px) {
+    .box {
+        padding: 1rem;
+        margin: 0.5rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    button {
+        padding: 0.5rem;
+        font-size: 0.875rem;
+    }
+}
+
+.aviso{
+    color:red;
+}

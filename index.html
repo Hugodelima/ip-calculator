@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Calculadora de IP</h1>
+
+            <label for="input_ip">Digite o IP com pontos:
+                <input type="text" maxlength="15" id="input_ip">
+            </label><br>
+            <label for="input_subrede">Digite a Quantidade de Subredes:
+                <select type="number" id="input_subrede">
+                    <option selected value="0">1</option>
+                    <option value="1">2</option>
+                    <option value="2">4</option>
+                    <option value="4">8</option>
+                    <option value="8">16</option>
+                    <option value="16">32</option>
+                    <option value="32">64</option>
+                    <option value="64">128</option>
+                    <option value="128">256</option>
+                </select>
+            </label><br>
+            <button type="button" id="botaoCalcular">Calcular</button>
+            <div class="resultados">
+                <p>IP Digitado: <b id="tabela_ip_valor"></b></p>
+                <p>Classe do Ip: <b id="tabela_classeIP_valor"></b></p>
+                <p>Primeiro Host: <b id="tabela_primeirohost_valor"></b></p>
+                <p>Último Host: <b id="tabela_ultimohost_valor"></b></p>
+                <p>Endereço de Rede: <b id="tabela_endereco_rede_valor"></b></p>
+                <p>BroadCast: <b id="tabela_brodcast_valor"></b></p>
+                <p>Binário: <b id="tabela_binario"></b></p>
+                <p>Mascara de SubREDE: <b id="tabela_mascara_sub_rede"></b></p>
+                <p>Qtd. De Hosts: <b id="tabela_host_de_cada_subrede"></b></p>
+            </div>
+            
+            <div class="tabela-container">
+                <table id="tabela">
+                    <tr>
+                        <th>Quantidade da SubRede</th>
+                        <th>Endereço de Rede</th>
+                        <th>Intervalo de Host</th>
+                        <th>Broadcast</th>
+                    </tr>
+                </table>
+            </div>
+            <h3 class="aviso"> Tabela Funcional Apenas para Classe C!</h3>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
